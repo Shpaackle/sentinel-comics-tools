@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #hero-name {
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sentinel Comics Character Sheet</title>
+    </head>
+    <body>
+    <h1>Sentinel Comics Character Sheet</h1>
+        <form action="" method="get" class="">
+            <label for="player-name">Player: </label>
+            <input id="player-name" name="player-name" type="text"><br>
+            <label for="hero-name">Hero Name: </label>
+            <input type="text" id="hero-name" name="hero-name">
+            <label for="alias">Alias: </label>
+            <input type="text" id="alias" name="alias"><br>
+            <h2>Physical Attributes</h2>
+            <label for="gender">Gender</label><input id="gender" name="gender" type="text">
+            <label for="age">Age</label><input id="age" name="age" type="text">
+            <label for="height">Height</label><input id="height" name="height" type="text">
+            <br>
+            <label for="eyes">Eyes</label><input id="eyes" name="eyes" type="text">
+            <label for="hair">Hair</label><input id="hair" name="hair" type="text">
+            <label for="skin">Skin</label><input id="skin" name="skin" type="text">
+            <br>
+            <label for="build">Gender</label><input id="build" name="build" type="text">
+            <br>
+            <label for="costume-equipment">Costume/Equipment</label><input id="costume-equipment" name="costume-equipment" type="text">
+            <h2>Characteristics</h2>
+            <label for="background-list">Background</label>
+            <input list="backgrounds" name="background-list" id="background-list">
+            <datalist id="backgrounds">
+                <option value="Upper Class"></option>
+                <option value="Blank Slate"></option>
+                <option value="Struggling"></option>
+                <option value="Adventurer"></option>
+                <option value="Unremarkable"></option>
+                <option value="Law Enforcement"></option>
+                <option value="Academic"></option>
+                <option value="Tragic"></option>
+                <option value="Performer"></option>
+                <option value="Military"></option>
+                <option value="Retired"></option>
+                <option value="Criminal"></option>
+                <option value="Medical"></option>
+                <option value="Anachronistic"></option>
+                <option value="Exile"></option>
+                <option value="Former Villain"></option>
+                <option value="Interstellar"></option>
+                <option value="Dynasty"></option>
+                <option value="Otherworldly"></option>
+                <option value="Created"></option>
+            </datalist>
+        </form>
+    </body>
+</html>
