@@ -8,8 +8,8 @@
     .background-roll-button {
         font-size: 1em;
         margin: 1em;
-        height: 3em;
-        width: 6em;
+        height: 2em;
+        width: 5em;
     }
 
     .D10-button {
@@ -52,10 +52,10 @@
         <b>background</b>,
         recording it in the characteristics section of your hero sheet. That provides you with some of your qualities, a
         principle, and a new set of dice to roll for power source for the next step.</p>
-    <div>
+    <div id="background-dice-roller">
     <button class="D10-button" id="background-die-1-result" disabled><b>D10</b></button>
     <button class="D10-button" id="background-die-2-result" disabled><b>D10</b></button>
-    <button class="background-roll-button" onclick="rollBackgroundDice()">Roll 2d10</button>
+    <button class="background-roll-button" onclick="rollBackgroundDice()">Roll dice</button>
     </div>
 
     <div class="background-options">
@@ -178,6 +178,9 @@
     of your hero sheet. The size of dice you just rolled provides you with some of your powers (details on page 44). You
     also receive some yellow abilities, other abilities, or qualities, and dice to roll for your archetype for the next
     step.</p>
+<div id="power-source-dice-roller">
+    <button class="power-source-roll-button" onclick="">Roll dice</button>
+</div>
 <hr>
 <h2>Step 3: Archetype</h2>
 <p>Roll the dice you gained from your power source to select an archetype, recording it in the characteristics section
