@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<style></style>
+<style>
+    .select-one {
+        font-style: italic;
+    }
+    .die-size {
+        margin: 10px;
+    }
+    .first-quality-die-row {
+        margin: 10px;
+    }
+</style>
 <head>
 <meta charset="UTF-8">
 <title>Blank Slate</title>
 </head>
 <body>
     <h1>Blank Slate</h1>
-    
+    <div class="container">
+        <h2>Assign dice to qualities:</h2>
+        <table class="quality-dice-table" id="quality-dice-table">
+            <tr class="first-quality-die-row" id="first-quality-die-row">
+                <td class="die-size" id="first-quality-die-size">D10</td>
+                <th>
+                    <label for="first-quality-selection">Select a quality to assign a D10: </label>
+                    <select name="first-quality-selection" id="first-quality-selection" value="">
+                        <option value="" class="select-one">Select One</option>
+                        <optgroup label="Mental qualities">
+                            <option value="Alertness">Alertness</option>
+                            <option value="Conviction">Conviction</option>
+                            <option value="Creativity">Creativity</option>
+                            <option value="Investigation">Investigation</option>
+                            <option value="Self-Discipline">Self-Discipline</option>
+                        </optgroup>
+                        <optgroup label="Physical qualities">
+                            <option value="Acrobatics">Acrobatics</option>
+                            <option value="Close Combat">Close Combat</option>
+                            <option value="Finesse">Finesse</option>
+                            <option value="Fitness">Fitness</option>
+                            <option value="Ranged Combat">Ranged Combat</option>"
+                            <option value="Stealth">Stealth</option>
+                        </optgroup>
+                    </select>
+                </th>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
